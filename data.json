@@ -1,0 +1,6 @@
+[
+    {"item": "dress", "priceInCents": 100, "inStock": "yes", "color": "yellow"},
+    {"item": "shirt", "priceInCents": 150, "inStock": "no", "color": "blue"},
+    {"item": "tunic", "priceInCents": 200, "inStock": "yes", "color": "black"},
+    {"item": "coat", "priceInCents": 300, "inStock": "yes", "color": "blue"}
+]

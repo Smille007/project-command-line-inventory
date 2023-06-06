@@ -1,0 +1,14 @@
+{
+  "name": "project-command-line-inventory",
+  "version": "1.0.0",
+  "description": "clothes inventory app",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Daryna Vershinina",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
