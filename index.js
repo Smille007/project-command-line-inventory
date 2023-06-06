@@ -15,22 +15,31 @@ if(command==="createNewItem"){
     if(item && priceInCents && inStock && color){
         commands.createNewItem(item, priceInCents, inStock, color)
     }
+}else if(command==="listOfAllItems"){
+    commands.listOfAllItems()
 
-}else if(command==="removelistOfAllItems"){
+}else if(command==="detailsOfOneItem"){
+    if(item){
+        commands.detailsOfOneItem(item)
+    }
 
-    }else if(command==="detailsOfOneItem"){
+}else if(command==="deleteItem"){
+    if(item){
+        commands.deleteItem(item)
+    }
 
+}else if(command==="updateItem"){
 
-        }else if(command==="deleteItem"){
-            if(item){
-                commands.deleteItem(item)
-            }
-    
-    }else if(command==="listOfAllItems"){
-        commands.listOfAllItems()
-
-
-            }else if(command==="updateItem"){
 
 
 }
+
+else if(command==="removelistOfAllItems"){
+
+
+
+}  
+    
+  
+
+

@@ -44,8 +44,21 @@ const listOfAllItems = () =>{
 
 }
 
+const detailsOfOneItem = (item) => {
+    let sample = [];
+    try{
+        sample = JSON.parse(fs.readFileSync("sample.json"));
+        } catch(e){
+                }
+                const filteredList = sample.filter((x) => x.item == item);
+                console.log(filteredList)
+                    
+}
+
+
 module.exports = {
     createNewItem,
     deleteItem,
-    listOfAllItems
+    listOfAllItems,
+    detailsOfOneItem
 }
