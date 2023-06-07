@@ -26,14 +26,11 @@ const createOrUpdateNewItem = (item, priceInCents, inStock, color) => {
   const listOfAllItems = () => {
     try {
       const sample = JSON.parse(fs.readFileSync('sample.json'));
-      return sample;
+      console.log(sample) ;
     } catch (error) {
       console.log('Error retrieving list of items:', error);
-      return [];
     }
   };
-  const allItems = listOfAllItems();
-  console.log(allItems);
   
 
 
@@ -55,6 +52,7 @@ const deleteItem = (item, priceInCents, inStock, color) => {
     sample.splice(index, 1);
     fs.writeFileSync('sample.json', JSON.stringify(sample));
     console.log(`Item '${item}' deleted successfully.`);
+
   } catch (error) {
   console.log(error)
   }
