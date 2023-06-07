@@ -11,35 +11,29 @@ let priceInCents = yargs.argv.priceInCents;
 let inStock = yargs.argv.inStock;
 let color = yargs.argv.color
 
-if(command==="createNewItem"){
+if(command==="createOrUpdateNewItem"){
     if(item && priceInCents && inStock && color){
-        commands.createNewItem(item, priceInCents, inStock, color)
+        commands.createOrUpdateNewItem(item, priceInCents, inStock, color)
     }
 }else if(command==="listOfAllItems"){
     commands.listOfAllItems()
 
-}else if(command==="detailsOfOneItem"){
-    if(item){
-        commands.detailsOfOneItem(item)
-    }
-
 }else if(command==="deleteItem"){
-    if(item){
-        commands.deleteItem(item)
+    if(item && priceInCents && inStock && color){
+        commands.deleteItem(item && priceInCents && inStock && color)
     }
 
-}else if(command==="updateItem"){
-
-
-
-}
+}else if(command==="detailsOfOneItem"){
+    if(item && priceInCents && inStock && color){
+        commands.detailsOfOneItem(item && priceInCents && inStock && color)
+    }
 
 else if(command==="removelistOfAllItems"){
-
-
-
+    if(item && priceInCents && inStock && color){
+        commands.removelistOfAllItems(item && priceInCents && inStock && color)
+    }
 }  
     
   
-
+}
 
