@@ -1,1 +1,15 @@
-[{"item":"hat","priceInCents":90,"inStock":"no","color":"white"}]
+[
+  {
+    "id": "77da335c-c608-4a44-b874-c4a9cd0ab151",
+    "item": "skirt",
+    "priceInCents": 400,
+    "inStock": "yes",
+    "color": "beige"
+  },
+  {
+    "item": "tshirt",
+    "priceInCents": 90,
+    "inStock": "yes",
+    "color": "re"
+  }
+]

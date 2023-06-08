@@ -4,11 +4,19 @@
   "description": "clothes inventory app",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+
+      "test": "jest"
+    }
   },
   "author": "Daryna Vershinina",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.2.0",
+    "uuid": "^9.0.0",
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }
